@@ -18,7 +18,7 @@ This Repository use store code, Learning Log, and Practice Python Language from 
 ---
 
 ## 🗺️ Roadmap
-
+Find more details on the subtopics and roadmap here.
 
 ---
 
@@ -39,3 +39,6 @@ python-intern-journey/
 └── README.md
 ```
 ---
+
+## 📝 Notice
+This repository is a personal practice space for my internship preparation. Always open to feedback and suggestions! 🙏
