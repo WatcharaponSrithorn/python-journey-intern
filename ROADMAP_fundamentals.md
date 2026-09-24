@@ -1,5 +1,5 @@
 # 🗺️ Roadmap_fundamental
-
+A learning log for tracking my basic Python learning progress, including the topics I learn and review, practice activities, and learning dates. It helps me build consistent practice habits and prepare for an IT internship.
 ---
 
 ## 0101. Basics
