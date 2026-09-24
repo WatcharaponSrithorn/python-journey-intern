@@ -18,24 +18,25 @@ This Repository use store code, Learning Log, and Practice Python Language from 
 ---
 
 ## 🗺️ Roadmap
-Find more details on the subtopics and roadmap here.
+You can find more details about the subtopics and my learning roadmap in my learning log and practice materials here.
 
 ---
 
 ## 📁 Repository Structure
 ```
 python-intern-journey/
-├── 01-fundamentals/
-│   ├── 01-basics/
-│   ├── 02-control-flow/
-│   ├── 03-functions/
-│   └── 04-file-io/
-├── 02-advanced/
-│   ├── 05-oop/
-│   ├── 06-gui-events/
-│   ├── 07-error-handling/
-│   └── 08-libraries/
-├── ROADMAP.md
+├── 01_fundamentals/
+│   ├── 0101_basics/
+│   ├── 0102_control_flow/
+|   ├── 0103_data_structure/
+│   ├── 0104_functions/
+│   └── 0105_file_io/
+├── 02_advanced/
+│   ├── 0201_oop/
+│   ├── 0202_gui_events/
+│   ├── 0203_error_handling/
+│   └── 0204_libraries/
+├── ROADMAP_fundamentals.md
 └── README.md
 ```
 ---
