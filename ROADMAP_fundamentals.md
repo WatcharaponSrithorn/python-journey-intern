@@ -72,3 +72,18 @@ A learning log for tracking my basic Python learning progress, including the top
 | | | | |
 
 ---
+
+## 0105. File.io
+
+| Sub-Topics |
+|---|
+| File (open, write, read) |
+| Reading and writing file text / CSV |
+
+**Learning Log :**
+>
+| Date | Topics Reviewed | Learning Notes | Practice Code |
+|---|---|---|---|
+| | | | |
+
+---
