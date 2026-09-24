@@ -20,6 +20,8 @@ This Repository use store code, Learning Log, and Practice Python Language from 
 ## 🗺️ Roadmap
 You can find more details about the subtopics and my learning roadmap in my learning log and practice materials here.
 
+[ROADMAP_fundamentals](./ROADMAP_fundamentals.md)
+
 ---
 
 ## 📁 Repository Structure
