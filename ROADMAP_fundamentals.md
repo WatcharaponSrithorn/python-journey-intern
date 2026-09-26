@@ -12,10 +12,12 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes | Practice Code |
+| Date | Topics Reviewed | Learning Notes | 
 |---|---|---|---|
 | 2026.09.25 | Introduction | <br> Python runs on an **interpreter**. <br> **Advantages:** It supports multiple operating systems, is open source, supports OOP, and has many libraries. <br> Python does not require `;` or `{}` to end a statement. <br> Python files use the `.py` file extension. <br> Python requires **indentation** because it is important for defining the **scope** of the code. <br> You can check the installed Python version in the local computer's CMD by using: `python --version`
 | |
+**Code Practice :**
+
 
 
 ---
@@ -31,9 +33,11 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes | Practice Code |
+| Date | Topics Reviewed | Learning Notes |
 |---|---|---|---|
 | | | | |
+
+**Code Practice :**
 
 ---
 
@@ -47,9 +51,11 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes | Practice Code |
+| Date | Topics Reviewed | Learning Notes |
 |---|---|---|---|
 | | | | |
+
+**Code Practice :**
 
 ---
 
@@ -68,9 +74,11 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes | Practice Code |
+| Date | Topics Reviewed | Learning Notes |
 |---|---|---|---|
 | | | | |
+
+**Code Practice :**
 
 ---
 
@@ -83,8 +91,10 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes | Practice Code |
+| Date | Topics Reviewed | Learning Notes |
 |---|---|---|---|
 | | | | |
+
+**Code Practice :**
 
 ---
