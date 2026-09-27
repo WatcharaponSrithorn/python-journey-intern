@@ -25,9 +25,13 @@ A learning log for tracking my basic Python learning progress, including the top
 |  | Rules naming Variable | names must start with a letter or an underscore `_`.<br> names must not start with a number. <br> names are case-sensitive.<br> names must not contain special characters, such as `{}`, `%`, or `^`. <br> names must not contain spaces.<br> names must not be the same as Python keywords. <br> **Tips for Naming Variables** <br>**Camel Case:** The first word starts with a lowercase letter, and each following word starts with an uppercase letter. <br> Example: `studentName`<br>**Pascal Case:** Each word starts with an uppercase letter.<br>Example: `StudentName`<br>**Snake Case:** Words are separated by an underscore `_`.<br>Example: `student_name`|
 |  | Input | Receive data from the user through the keyboard and store it in a variable `varible = input()`. <br> can define the data type of the input value by using **type casting**, such as `variable = int(input())`. <br>The `input()` function always returns the input value as a string (`str`).|
 |  | Casting | Use a data type name to convert a variable to the required data type.<br> `float(varible)` `str(int)` `str(5)` <br>If the original data type is `float` and you cast it to `int`, the decimal part will be discarded.|
+| 2026.09.27| F-String | F-String `f" string "`can insert a variable in `" "` by put `{}` `f" name {variable}"` <br> can math inside `f"{5+3}"` <br> can format decimal numbers`f"price : {price:.2f}"` <br> Short and easy to read. |
+|  | Variable <br>(Additional) | variable can store multiple lines of text.  on varible by use `variable = (" text 1 "\n " text 2 ")` by `\n` is start new line |
+|  | `\` (Backslash) | `\n` new line , `\t` it is Tab, `\` End of line of code for code long <br> if will path file must use `r"C:\Users\test"`|
 |---|---|---|
 
 **Code Practice :**
+2026.09.27 [self_intro.py](./01_fundamentals/0101_basics/self_intro.py)
 
 ---
 
