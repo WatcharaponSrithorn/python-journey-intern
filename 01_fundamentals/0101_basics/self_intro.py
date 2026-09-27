@@ -12,14 +12,14 @@ campus = "Chakrabongse Bhuvanarth Campus"
 major = "Bachelor of Science in Information Technology"
 contact = "srith.watcharapon@gmail.com"
 # declaring for use not f-string inside another f-string
-title_line = f"PROFILE - INTERNSHIP CANDIDATE"
-personal_header = f"Personal my self"
+title_line = "PROFILE - INTERNSHIP CANDIDATE"
+personal_header = "Personal my self"
 full_name = f"{first_name} {last_name}"
 line_university = f"university : {university}"
 line_campus = f"campus : {campus}"
 line_major = f"major : {major}"
 line_concact = f"contact : {contact}"
-goal_header = f"Internship Goal"
+goal_header = "Internship Goal"
 
 #Section 2: Internship Goal
 goal_line1 = "I am interested in an internship in software development"
