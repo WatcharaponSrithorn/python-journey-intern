@@ -25,12 +25,13 @@ You can find more details about the subtopics and my learning roadmap in my lear
 ---
 
 ## 📁 Repository Structure
+<pre>
 python-intern-journey/
 ├── 01_fundamentals/
-│   ├── 0101_basics/ 
-│   ├──── [self_intro.py](./01_fundamentals/0101_basics/self_intro.py)
+│   ├── 0101_basics/
+│   │   └── <a href="./01_fundamentals/0101_basics/ROADMAP_fundamentals.md">ROADMAP_fundamentals.md</a>
 │   ├── 0102_control_flow/
-|   ├── 0103_data_structure/
+│   ├── 0103_data_structure/
 │   ├── 0104_functions/
 │   └── 0105_file_io/
 ├── 02_advanced/
@@ -38,8 +39,9 @@ python-intern-journey/
 │   ├── 0202_gui_events/
 │   ├── 0203_error_handling/
 │   └── 0204_libraries/
-├── ROADMAP_fundamentals.md
-└── README.md
+├── <a href="./ROADMAP_fundamentals.md">ROADMAP_fundamentals.md</a>
+└── <a href="./README.md">README.md</a>
+</pre>
 ---
 
 ## 📝 Notice
