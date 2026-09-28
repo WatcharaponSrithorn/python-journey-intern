@@ -29,7 +29,7 @@ You can find more details about the subtopics and my learning roadmap in my lear
 python-intern-journey/
 ├── 01_fundamentals/
 │   ├── 0101_basics/
-│   │   └── <a href="./01_fundamentals/0101_basics/self_intro.py">self_intro.py</a>
+│   │   └── <a href="./01_fundamentals/0101_basics/01_self_intro.py">self_intro.py</a>
 │   ├── 0102_control_flow/
 │   ├── 0103_data_structure/
 │   ├── 0104_functions/

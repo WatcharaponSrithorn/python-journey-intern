@@ -31,7 +31,7 @@ A learning log for tracking my basic Python learning progress, including the top
 |---|---|---|
 
 **Code Practice :**
-2026.09.27 [self_intro.py](./01_fundamentals/0101_basics/self_intro.py)
+2026.09.27 [self_intro.py](./01_fundamentals/0101_basics/01_self_intro.py)
 
 ---
 
