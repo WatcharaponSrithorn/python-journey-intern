@@ -6,22 +6,22 @@
 # ============================================
 
 # declaring variable 
-titel = "BMI CALCULATOR RESULT"     # for use not " " overlap " " becuase use Python 3.12 up
+title = "BMI CALCULATOR RESULT"             # text to show as the result header
 
 # input
-weight = float(input("Please enter your weight (kg): "))    # use flast(input) for change value is decimal
-height = float(input("Please enter your height (m): "))
+weight = float(input("Please enter your weight (kg): "))    # input() always returns string, so cast to float for math
+height = float(input("Please enter your height (m): "))     # same reason as above
 
 # process
-BMI = weight / (height * height)            
+bmi = weight / (height * height)            # BMI formula: weight divided by height squared
 
 # output
 print(" ")
 print("="*50)
-print(f"{titel:^50}")                       # use for format display readable
+print(f"{title:^50}")                       # :^50 centers the text in a 50-character width
 print("="*50)
 print(" ")
-print(f"Weight\t\t:\t{weight} kg.")         # use `\t` format tab
+print(f"Weight\t\t:\t{weight} kg.")         # \t adds a tab space for alignment
 print(f"Height\t\t:\t{height} m.")
-print(f"Your BMI\t:\t{BMI:.2f}")            # use `.2f` format for display 2 decimal
+print(f"Your BMI\t:\t{bmi:.2f}")            # :.2f rounds the number to 2 decimal places
 print("="*50)
