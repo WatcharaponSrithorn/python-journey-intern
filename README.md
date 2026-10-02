@@ -30,6 +30,7 @@ python-intern-journey/
 ├── 01_fundamentals/
 │   ├── 0101_basics/
 │   │   └── <a href="./01_fundamentals/0101_basics/01_self_intro.py">01_self_intro.py</a>
+│   │   └── <a href="./01_fundamentals/0101_basics/learning_log_01_self_intro.md">learning_log_01_self_intro.md</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/02_BMI_Calculator.py">02_BMI_Calculator.py</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/03_shopping_receipt.py">03_shopping_receipt.py</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/04_Customer_CSV_Formatter.py">04_Customer_CSV_Formatter.py</a>
