@@ -31,9 +31,10 @@ A learning log for tracking my basic Python learning progress, including the top
 |---|---|---|
 
 **Code Practice :**
-2026.09.27 [01_self_intro.py](./01_fundamentals/0101_basics/01_self_intro.py)
-2026.09.29 [02_BMI_Calculator.py](./01_fundamentals/0101_basics/02_BMI_Calculator.py)
-2026.09.30 [03_shopping_receipt.py](./01_fundamentals/0101_basics/03_shopping_receipt.py)
+<br>2026.09.27 [01_self_intro.py](./01_fundamentals/0101_basics/01_self_intro.py)
+<br>2026.09.29 [02_BMI_Calculator.py](./01_fundamentals/0101_basics/02_BMI_Calculator.py)
+<br>2026.09.30 [03_shopping_receipt.py](./01_fundamentals/0101_basics/03_shopping_receipt.py)
+<br>2026.10.01 [04_Customer_CSV_Formatter.py](./01_fundamentals/0101_basics/04_Customer_CSV_Formatter.py)
 
 ---
 
