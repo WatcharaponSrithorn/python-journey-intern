@@ -55,6 +55,10 @@ A learning log for tracking my basic Python learning progress, including the top
 | Date | Topics Reviewed | Learning Notes |
 |---|---|---|
 | 2026.10.03 | Operator | Oprerator is perform on variable and value by <br> **Arithmetic** use with number value to perform mathematic `+` add, `-` substrac, `*` multi, `/` divis, `%` moduls, `**` power, `//`fool divis return integer <br> **Assignment** perform same Arithmetic is reduce to form `+=`, `-=`, `*=`, `/=`, `%=`, `**=`, `//=`  <br> **Logical** Ues combie condition statement `and` True and True is value True always , `or` False or False is value False always , `not` opposite,  <br> **Comparison** Use to compare 2 value `==` equal , `!=` not equal, `<` less than, `>` more than , `<=`less than or equal, `>=`more than or equal <br> **Identity** Use compare object with same memory location return is `True` or `False`, `is`, `is not` <br> Differance between `is` check both variable to same in memory and `==` check value of both variable equal <br> **Membership** Use check value in variable have this value is element in variable and can chaeck also work with String  |
+|  | if Statement | if Statement is statement logicalcal condition <br> `if` use when have 1 condition and if condition is True will perform inside statement but must indent because to define scope <br> `else` use when have 2 condition and perform inside statement when if is False `elif` Use when have more than 2 condition and can have `elif` more than 1 statement and perform when previous condition not True |
+|  | Ternary if | Use when have one statement to execute need result is True or False by have 2 condition |
+|  | Nested if | `if` Statement can have if inside if by have if main and if sub and will execute if main before |
+|  | Pass | `if` can not empty must inside have statement But can put `pass` inside `if` statement for execute no error |
 |---|---|---|
 
 **Code Practice :**
