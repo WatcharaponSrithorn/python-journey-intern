@@ -34,16 +34,16 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0101_basics/02_BMI_Calculator.py">02_BMI_Calculator.py</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/learning_log_02_BMI_Calculator.md">learning_log_02_BMI_Calculator.md</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/03_shopping_receipt.py">03_shopping_receipt.py</a>
+│   │   └── <a href="./01_fundamentals/0101_basics/learning_log_03_shopping_receipt.md">earning_log_03_shopping_receipt.md</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/04_Customer_CSV_Formatter.py">04_Customer_CSV_Formatter.py</a>
+│   │   └── <a href="./01_fundamentals/0101_basics/learning_log_04_Customer_CSV_Formatter.md">learning_log_04_Customer_CSV_Formatter.md</a>
 │   ├── 0102_control_flow/
 │   ├── 0103_data_structure/
 │   ├── 0104_functions/
 │   └── 0105_file_io/
 ├── 02_advanced/
 │   ├── 0201_oop/
-│   ├── 0202_gui_events/
-│   ├── 0203_error_handling/
-│   └── 0204_libraries/
+│   ├── 0202_error_handling/
 ├── <a href="./ROADMAP_fundamentals.md">ROADMAP_fundamentals.md</a>
 └── <a href="./README.md">README.md</a>
 </pre>
