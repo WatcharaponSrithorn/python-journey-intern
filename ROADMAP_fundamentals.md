@@ -53,6 +53,7 @@ A learning log for tracking my basic Python learning progress, including the top
 **Learning Log :**
 >
 | Date | Topics Reviewed | Learning Notes |
+|---|---|---|
 | 2026.10.03 | Operator | Oprerator is perform on variable and value by <br> **Arithmetic** use with number value to perform mathematic `+` add, `-` substrac, `*` multi, `/` divis, `%` moduls, `**` power, `//`fool divis return integer <br> **Assignment** perform same Arithmetic is reduce to form `+=`, `-=`, `*=`, `/=`, `%=`, `**=`, `//=`  <br> **Logical** Ues combie condition statement `and` True and True is value True always , `or` False or False is value False always , `not` opposite,  <br> **Comparison** Use to compare 2 value `==` equal , `!=` not equal, `<` less than, `>` more than , `<=`less than or equal, `>=`more than or equal <br> **Identity** Use compare object with same memory location return is `True` or `False`, `is`, `is not` <br> Differance between `is` check both variable to same in memory and `==` check value of both variable equal <br> **Membership** Use check value in variable have this value is element in variable and can chaeck also work with String  |
 |---|---|---|
 
