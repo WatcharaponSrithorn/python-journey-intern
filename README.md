@@ -38,6 +38,10 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0101_basics/04_Customer_CSV_Formatter.py">04_Customer_CSV_Formatter.py</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/learning_log_04_Customer_CSV_Formatter.md">learning_log_04_Customer_CSV_Formatter.md</a>
 │   ├── 0102_control_flow/
+│   │   └── <a href="./01_fundamentals/0102_control_flow/05_Customer_Data_Validator.py">05_Customer_Data_Validator.py</a>
+│   │   └── <a href="./01_fundamentals/0102_control_flow/learning_log_05_Customer_Data_Validator.md">learning_log_05_Customer_Data_Validator.md</a>
+│   │   └── <a href="./01_fundamentals/0102_control_flow/06_Customer_Tier_Classifier.py">06_Customer_Tier_Classifier.py</a>
+│   │   └── <a href="./01_fundamentals/0102_control_flow/learning_log_06_Customer_Tier_Classifier.md">learning_log_06_Customer_Tier_Classifier.md</a>
 │   ├── 0103_data_structure/
 │   ├── 0104_functions/
 │   └── 0105_file_io/
