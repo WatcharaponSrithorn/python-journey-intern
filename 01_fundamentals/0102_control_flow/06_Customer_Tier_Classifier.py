@@ -17,7 +17,7 @@ display_2 = "Reason"
 
 # Input value for check conditions must specify data type
 print(f"{separator*5} {title_program} {separator*5}")       # display title program
-print("-"*50)
+print(f"{separator*50}")
 print(" ")
 total_spending = float(input("Enter total spending (THB) : "))  # input() always returns a string, so cast to float for math and inform and Specify the currency protect
 membership_years = int(input("Enter member year amount : "))    # input() always returns a string, so cast to int for math
@@ -25,14 +25,17 @@ has_complaint = input("Any complaint history? (yes/no) :")
 
 
 # Process Classify the tier
-if total_spending >= 100000:
+# Check spending first because it's the main factor for high-tier customers
+if total_spending >= 100000:        
+    # Nested check: even high spenders need 3+ years
     if membership_years >= 3:
+        # and Nested check: no complaints for Platinum
         if has_complaint == "no" or has_complaint == "No":
             tier = "Platinum"
-            reason = f"High spending {total_spending}, member {membership_years} year, {has_complaint} has complaint "
+            reason = f"High spending {total_spending}, member {membership_years} year, {has_complaint} complaint "
         else:
             tier = "Gold"
-            reason = f"High spending {total_spending}, member {membership_years} year, But has complaint {has_complaint}"
+            reason = f"High spending {total_spending}, member {membership_years} year, But has complaint "
     else:
         tier = "Gold"
         reason = f"High spending {total_spending},member {membership_years} year less than 3 year"
