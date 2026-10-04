@@ -7,7 +7,7 @@
 
 # section input
 age = int(input("Enter age : "))        # input() always returns a string, so cast to int for math
-membership_fee = float(input("Enter membership fee (THB) : ")) # input() alway String, so cast to float for math and inform and Specify the currency protect 
+membership_fee = float(input("Enter membership fee (THB) : ")) # input() always String, so cast to float for math and inform and Specify the currency protect 
 is_active = input("Is the customer active? (True / False ) : ")
 email = input("Enter email : ")
 
@@ -20,17 +20,17 @@ result_summary = ""
 # declaring variable for display
 separator = "="
 title_report = "Validation Result"
-colum_1 = "age"
-colum_2 = "membership_fee"
-colum_3 = "is_active"
-colum_4 = "email"
+column_1 = "age"
+column_2 = "membership_fee"
+column_3 = "is_active"
+column_4 = "email"
 title_result = "Overall Result"
 title_csv = "CSV row"
 
 # section validation value to input
 # section about age betwwen 18-100 only
 
-result_age = "OK" if 18 < age < 100 else "Age invalid (must be 18 - 100)"
+result_age = "OK" if 18 <= age <= 100 else "Age invalid (must be 18 - 100)"
 
 # section about membership_fee for 0 will calculate error 0 * Anyway = 0 
 result_membership_fee = "Membership fee invalid (must be more than 0)" if membership_fee <= 0 else "OK"
@@ -58,10 +58,10 @@ else:
 print(" ")                              # for Leave a blank line.
 print(f"{separator*5} {title_report} {separator*5}")
 print("="*50)
-print(f"{colum_1:<25} : {result_age}")
-print(f"{colum_2:<25} : {result_membership_fee}")
-print(f"{colum_3:<25} : {result_is_active}")
-print(f"{colum_4:<25} : {result_email}")
+print(f"{column_1:<25} : {result_age}")
+print(f"{column_2:<25} : {result_membership_fee}")
+print(f"{column_3:<25} : {result_is_active}")
+print(f"{column_4:<25} : {result_email}")
 print("-"*50)
 print(f"{title_result:<25} : {result_summary}")
 print("="*50)
@@ -69,6 +69,6 @@ print("="*50)
 # Output Raw CSV after result_summary "Pass"
 if result_summary == "PASS - Ready to save":
     print(f"{separator*5} {title_csv} {separator*5}")
-    print(f"{colum_1},{colum_2},{colum_3},{colum_4}")
+    print(f"{column_1},{column_2},{column_3},{column_4}")
     print(f"{age},{membership_fee},{is_active},{email}")
     print("="*50)
