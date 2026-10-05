@@ -60,7 +60,7 @@ A learning log for tracking my basic Python learning progress, including the top
 |  | Nested if | `if` Statement can have if inside if by have if main and if sub and will execute if main before |
 |  | Pass | `if` can not empty must inside have statement But can put `pass` inside `if` statement for execute no error |
 |---|---|---|
-| 2026.10.05 | Match Statement | Requires `Python 3.10` or Higher by similar `if` Statement by use command `case` is compare value from top to bottom is pattern and match then stop <br> **Literal** is match statement normal to compare constant `int` `str` compare use `==` and `None` `True` `False` compare use `is` <br>**Wildcard**|
+| 2026.10.05 | Match Statement | Requires `Python 3.10` or Higher by similar `if` Statement by use command `case` is compare value from top to bottom is pattern and match then stop <br> **Literal** is match statement normal to compare constant `int` `str` compare use `=`,`==` and `None` `True` `False` compare use `is` <br>**Wildcard** similar `else` use `_` underscore is match anyting , use when not care about value is defualt <br> **Capture** take varible put in `case variable :` should put it at end pattern <br> **Guard** Extra condition because take `if` Statement append value will to match `Case "2" if variable = 50` <br> **OR** is `or` Operator by use | pipe in case <br> **Sequence** use with `List` and `Tuple` <br> **Mapping** use with `dictionary`|
 
 **Code Practice :**
 | Date | File Code | Learning Log | 
