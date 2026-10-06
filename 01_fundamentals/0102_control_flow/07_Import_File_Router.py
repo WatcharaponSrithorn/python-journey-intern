@@ -19,23 +19,24 @@ display_4 = "Warning"
 
 # Input Ask the user
 print(f"{separator_1*5} {title_program} {separator_1*5}")
-file_name = input("Enter file name : ")             # Receive for split extension
+file_name = input("Enter file name : ")                     # Receive for split extension
 file_size_mb = float(input("Enter file size (MB) : "))     # Receive for use verify condition special process 
 
 # Process 
-# Section split extension 
-root, ext = file_name.split(".")        # Use unpacking because .split is List for file extension perform in match
+# Section split extension is list 
+# add index [-1] case to have dot . more one
+ext = file_name.split(".")[-1]
+ext_lower = ext.lower               # for duplicate code in case not  CSV | csv
 
 # Section Match for split process
-match ext:
-    case "csv" | "CSV" if file_size_mb > 100:           # use verify condition continue of size
+match ext_lower:
+    case "csv" :           
         result_process = "Process as CSV: read rows and columns"
-        result_warning = "Warning: large file, consider chunked reading"
-    case "csv" | "CSV" :
-        result_process = "Process as CSV: read rows and columns"
-    case "json" | "JSON":
+        if file_size_mb > 100:
+            result_warning = "Warning: large file, consider chunked reading"
+    case "json":
         result_process = "Process as JSON: parse as dictionary"
-    case "xml" | "XML" | "txt" | "TXT":
+    case "xml"| "txt":
         result_process = "Process as plain text: needs manual parsing"
     case _:                                             # use protet file extention unknow 
         result_process = "Unknown file type : cannot process"
@@ -48,5 +49,5 @@ print(f"{separator_1*50}")
 print(f"{display_1:<25} : {file_name}")
 print(f"{display_2:<25} : {ext}")
 print(f"{display_3:<25} : {result_process}")
-if ext == "CSV" or "csv":
+if result_warning != "":                      
     print(f"{display_4:<25} : {result_warning}")
