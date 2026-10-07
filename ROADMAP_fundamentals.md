@@ -59,8 +59,8 @@ A learning log for tracking my basic Python learning progress, including the top
 |  | Ternary if | Use when have one statement to execute need result is True or False by have 2 condition |
 |  | Nested if | `if` Statement can have if inside if by have if main and if sub and will execute if main before |
 |  | Pass | `if` can not empty must inside have statement But can put `pass` inside `if` statement for execute no error |
-|---|---|---|
 | 2026.10.05 | Match Statement | Requires `Python 3.10` or Higher by similar `if` Statement by use command `case` is compare value from top to bottom is pattern and match then stop <br> **Literal** is match statement normal to compare constant `int` `str` compare use `=`,`==` and `None` `True` `False` compare use `is` <br>**Wildcard** similar `else` use `_` underscore is match anyting , use when not care about value is defualt <br> **Capture** take varible put in `case variable :` should put it at end pattern <br> **Guard** Extra condition because take `if` Statement append value will to match `Case "2" if variable = 50` <br> **OR** is `or` Operator by use | pipe in case <br> **Sequence** use with `List` and `Tuple` <br> **Mapping** use with `dictionary`|
+| 2026.10.07 | While Loop | While loop is repeat a block code by condition is `True` <br> If the condition is `False`, loop will stops. <br> is Pre-test loop will check condition before run in block code <br> Format While loop <br> - Declare a counter variable, such as i, before the loop. Update or Countdown the counter inside the loop to prevent an infinite loop. <br> - While loop use with Comparison Operator or Logical Operator <br> - `while True:` creates an infinite loop. must use `break` mean stop loop and out from loop `continue` mean skip current iteration and start next satatement in iteration |
 
 **Code Practice :**
 | Date | File Code | Learning Log | 
