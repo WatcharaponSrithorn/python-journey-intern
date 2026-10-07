@@ -44,7 +44,7 @@ match ext_lower:
 # Section Readable Summary display
 print("")
 print(f"{separator_1*50}")
-print(f"{title_sumary:^50}")
+print(f"{title_summary:^50}")
 print(f"{separator_1*50}")
 print(f"{display_1:<25} : {file_name}")
 print(f"{display_2:<25} : {ext_lower}")
