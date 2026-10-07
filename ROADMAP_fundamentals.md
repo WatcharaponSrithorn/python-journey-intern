@@ -66,7 +66,8 @@ A learning log for tracking my basic Python learning progress, including the top
 | Date | File Code | Learning Log | 
 |---|---|---|
 |2026.10.04 | [05_Customer_Data_Validator.py](./01_fundamentals/0102_control_flow/05_Customer_Data_Validator.py) | [Learning Log](./01_fundamentals/0102_control_flow/learning_log_05_Customer_Data_Validator.md) |
-|2026.10.04 | [06_Customer_Tier_Classifier.py](./01_fundamentals/0102_control_flow/06_Customer_Tier_Classifier.py) | [Learning Log](./01_fundamentals/0102_control_flow/learning_log_06_Customer_Tier_Classifier) |
+|2026.10.04 | [06_Customer_Tier_Classifier.py](./01_fundamentals/0102_control_flow/06_Customer_Tier_Classifier.py) | [Learning Log](./01_fundamentals/0102_control_flow/learning_log_06_Customer_Tier_Classifier.md) |
+| 2026.10.07 |[07_Import_File_Router.py](./01_fundamentals/0102_control_flow/07_Import_File_Router.py)| [Learning Log](./01_fundamentals/0102_control_flow/learning_log_07_Import_File_Router.md) |
 ---
 
 ## 0103. data_structure
