@@ -8,15 +8,15 @@
 # ============================================
 
 # Declaring variable constant
-TOTAL_RECORDS = 1009            
+TOTAL_RECORDS = 47            
 PAGE_SIZE = 10                  
 SAFETY_TIMES = 100
 
 # use counter loop 
-page_counter = 0
+page_counter = 0                # counts pages for the report
 records_fetched = 0             # for store value to fetched
 records_page_size = 0
-safety_counter = 0
+safety_counter = 0              # counts loops to stop an infinite loop
 
 # use display
 separator = "="
@@ -60,7 +60,7 @@ print(f"{separator*50}")
 print(f"{separator*5} {title_summary} {separator*5}")
 print(f"{summary_display_1:<25} : {page_counter}")
 print(f"{summary_display_2:<25} : {records_fetched}")
-if records_fetched <= SAFETY_TIMES:
+if safety_counter <= SAFETY_TIMES:
     print(f"{summary_display_3:<25} : Complete")
 else:
     print(f"{summary_display_3:<25} : Incomplete (Safety limit reached)")
