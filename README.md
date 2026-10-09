@@ -34,7 +34,7 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0101_basics/02_BMI_Calculator.py">02_BMI_Calculator.py</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/learning_log_02_BMI_Calculator.md">learning_log_02_BMI_Calculator.md</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/03_shopping_receipt.py">03_shopping_receipt.py</a>
-│   │   └── <a href="./01_fundamentals/0101_basics/learning_log_03_shopping_receipt.md">earning_log_03_shopping_receipt.md</a>
+│   │   └── <a href="./01_fundamentals/0101_basics/learning_log_03_shopping_receipt.md">learning_log_03_shopping_receipt.md</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/04_Customer_CSV_Formatter.py">04_Customer_CSV_Formatter.py</a>
 │   │   └── <a href="./01_fundamentals/0101_basics/learning_log_04_Customer_CSV_Formatter.md">learning_log_04_Customer_CSV_Formatter.md</a>
 │   ├── 0102_control_flow/
@@ -44,6 +44,8 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0102_control_flow/learning_log_06_Customer_Tier_Classifier.md">learning_log_06_Customer_Tier_Classifier.md</a>
 │   │   └── <a href="./01_fundamentals/0102_control_flow/07_Import_File_Router.py">07_Import_File_Router.py</a>
 │   │   └── <a href="./01_fundamentals/0102_control_flow/learning_log_07_Import_File_Router.md">learning_log_07_Import_File_Router.md</a>
+│   │   └── <a href="./01_fundamentals/0102_control_flow/08_API_Pagination_Simulator.py">08_API_Pagination_Simulator.py</a>
+│   │   └── <a href="./01_fundamentals/0102_control_flow/learning_log_08_API_Pagination_Simulator.md">learning_log_08_API_Pagination_Simulator.md</a>
 │   ├── 0103_data_structure/
 │   ├── 0104_functions/
 │   └── 0105_file_io/

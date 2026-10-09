@@ -31,12 +31,12 @@ A learning log for tracking my basic Python learning progress, including the top
 |---|---|---|
 
 **Code Practice :**
-| Date | File Code | Learning Log | 
-|---|---|---|
-| 2026.09.27 | [01_self_intro.py](./01_fundamentals/0101_basics/01_self_intro.py) | [Learning Log](./01_fundamentals/0101_basics/learning_log_01_self_intro.md) |
-| 2026.09.29 | [02_BMI_Calculator.py](./01_fundamentals/0101_basics/02_BMI_Calculator.py)|[Learning Log](./01_fundamentals/0101_basics/learning_log_02_BMI_Calculator.md)|
-| 2026.09.30 | [03_shopping_receipt.py](./01_fundamentals/0101_basics/03_shopping_receipt.py) |[Learning Log](./01_fundamentals/0101_basics/learning_log_03_shopping_receipt.md)|
-| 2026.10.01 | [04_Customer_CSV_Formatter.py](./01_fundamentals/0101_basics/04_Customer_CSV_Formatter.py) |[Learning Log](./01_fundamentals/0101_basics/learning_log_04_Customer_CSV_Formatter.md)|
+| Date | File Code | Learning Log | About | 
+|---|---|---|---|
+| 2026.09.27 | [01_self_intro.py](./01_fundamentals/0101_basics/01_self_intro.py) | [Learning Log](./01_fundamentals/0101_basics/learning_log_01_self_intro.md) | Uses print() |
+| 2026.09.29 | [02_BMI_Calculator.py](./01_fundamentals/0101_basics/02_BMI_Calculator.py)|[Learning Log](./01_fundamentals/0101_basics/learning_log_02_BMI_Calculator.md)| using input(), Casting , Using f-string|
+| 2026.09.30 | [03_shopping_receipt.py](./01_fundamentals/0101_basics/03_shopping_receipt.py) |[Learning Log](./01_fundamentals/0101_basics/learning_log_03_shopping_receipt.md)|Using `input()` , casting , show display for readable|
+| 2026.10.01 | [04_Customer_CSV_Formatter.py](./01_fundamentals/0101_basics/04_Customer_CSV_Formatter.py) |[Learning Log](./01_fundamentals/0101_basics/learning_log_04_Customer_CSV_Formatter.md)|Using `in`, logic `csv`comma (,)|
 |---|---|---|
 
 ---
@@ -63,11 +63,12 @@ A learning log for tracking my basic Python learning progress, including the top
 | 2026.10.07 | While Loop | While loop is repeat a block code by condition is `True` <br> If the condition is `False`, loop will stops. <br> is Pre-test loop will check condition before run in block code <br> Format While loop <br> - Declare a counter variable, such as i, before the loop. Update or Countdown the counter inside the loop to prevent an infinite loop. <br> - While loop use with Comparison Operator or Logical Operator <br> - `while True:` creates an infinite loop. must use `break` mean stop loop and out from loop `continue` mean skip current iteration and start next satatement in iteration |
 
 **Code Practice :**
-| Date | File Code | Learning Log | 
-|---|---|---|
-|2026.10.04 | [05_Customer_Data_Validator.py](./01_fundamentals/0102_control_flow/05_Customer_Data_Validator.py) | [Learning Log](./01_fundamentals/0102_control_flow/learning_log_05_Customer_Data_Validator.md) |
-|2026.10.04 | [06_Customer_Tier_Classifier.py](./01_fundamentals/0102_control_flow/06_Customer_Tier_Classifier.py) | [Learning Log](./01_fundamentals/0102_control_flow/learning_log_06_Customer_Tier_Classifier.md) |
-| 2026.10.07 |[07_Import_File_Router.py](./01_fundamentals/0102_control_flow/07_Import_File_Router.py)| [Learning Log](./01_fundamentals/0102_control_flow/learning_log_07_Import_File_Router.md) |
+| Date | File Code | Learning Log | About |
+|---|---|---|---|
+|2026.10.04 | [05_Customer_Data_Validator.py](./01_fundamentals/0102_control_flow/05_Customer_Data_Validator.py) | [Learning Log](./01_fundamentals/0102_control_flow/learning_log_05_Customer_Data_Validator.md) |if elif else Operator input Casting|
+|2026.10.04 | [06_Customer_Tier_Classifier.py](./01_fundamentals/0102_control_flow/06_Customer_Tier_Classifier.py) | [Learning Log](./01_fundamentals/0102_control_flow/learning_log_06_Customer_Tier_Classifier.md) | Nested if input Casting|
+| 2026.10.07 |[07_Import_File_Router.py](./01_fundamentals/0102_control_flow/07_Import_File_Router.py)| [Learning Log](./01_fundamentals/0102_control_flow/learning_log_07_Import_File_Router.md) | Match Statement, Try .split(".") Use if/else|
+| 2026.10.08 |[08_API_Pagination_Simulator.py](./01_fundamentals/0102_control_flow/08_API_Pagination_Simulator.py)|[Learning Log](./01_fundamentals/0102_control_flow/learning_log_08_API_Pagination_Simulator.md)|while loop, Varible constant, if..else |
 ---
 
 ## 0103. data_structure
@@ -80,9 +81,9 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes |
-|---|---|---|
-|---|---|---|
+| Date | Topics Reviewed | Learning Notes | About |
+|---|---|---|---|
+|---|---|---|---|
 
 **Code Practice :**
 
@@ -103,9 +104,9 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes |
-|---|---|---|
-|---|---|---|
+| Date | Topics Reviewed | Learning Notes |About |
+|---|---|---|---|
+|---|---|---|---|
 
 **Code Practice :**
 
@@ -120,9 +121,9 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes |
-|---|---|---|
-|---|---|---|
+| Date | Topics Reviewed | Learning Notes |About |
+|---|---|---|---|
+|---|---|---|---|
 
 **Code Practice :**
 
