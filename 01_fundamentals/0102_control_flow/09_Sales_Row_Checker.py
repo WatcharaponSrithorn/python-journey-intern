@@ -3,7 +3,7 @@
 # Purpose:  Practice for loop with range() and if/elif/else to check sales rows
 #           check data quality many rows before saving data
 #           summarize how many rows passed and failed.
-#           pass add sum Total sales  
+#           Add the total only for rows that pass
 # Author: Watacharapon
 # ============================================
 
@@ -15,7 +15,7 @@ hyphen = "-"
 result_row = ""
 title_summary = "SUMMARY"
 display_summary_1 = "Rows passed"
-display_summary_2 = "Rows fail"
+display_summary_2 = "Rows failed"
 display_summary_3 = "Total sales (passed)"
 # variable for calculate
 # Set counters BEFORE the loop. If we set them inside the loop,
@@ -27,11 +27,11 @@ row_fail = 0
 # Section input ask number of rows
 print(f"{separator*5} {title_program} {separator*5}")
 number_row = int(input("How many rows to check (1-10) : "))
-# Section check number row if is in range will receive for verify pass or faile.
+# Section check number row if is in range will receive for verify pass or fail.
 if 1 <= number_row <= 10:
     for row_number in range(1,number_row+1):     # need start 1
         print(f"{hyphen*5} Row {row_number} {hyphen*5}")
-        product_name = input("Enter product name : ").split()
+        product_name = input("Enter product name : ").strip()
         unit_price = float(input("Enter unit price (THB) : "))
         quantity = int(input("Enter quantity : "))
         # Section check data quality and if pass will calculate next then
