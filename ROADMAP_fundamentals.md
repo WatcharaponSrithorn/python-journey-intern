@@ -82,11 +82,15 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes | About |
-|---|---|---|---|
-|---|---|---|---|
+| Date | Topics Reviewed | Learning Notes |
+|---|---|---|
+| 2026.10.11 | Additional : String | **Concatenation** <br> Use the `+` operator to join two or more strings <br> **Slice** <br> - Use `variable[index]` to access a character at a specific index. <br> - Use `variable[start:end]` to get a part of a string. The start index is included, but the before end index to specify <br> - can use a for loop to access each character in a string <br> **Modify String** <br> - `.upper()` converts all letters in a string to uppercase. <br> - `.lower()`converts all letters in a string to lowercase. <br> - `.startswith("...")` checks whether a string starts with a specific value by returns `True` or `False`. <br> - `.endswith("...")` checks whether a string ends with a specific value by returns `True` or `False`. <br> - `.find("...")` searches for a specific string and returns its first index. It returns -1 if the string is not found. <br> - `.count("...")` counts how many times a specific substring appears in a string. <br> - `.replace("old,new")` replaces occurrences of the old string with the new string. <br> - `.strip()` removes whitespace from the beginning and end of a string. <br> - `len(variable)`  returns  number of characters in a string. <br> - `.split(",")` splits a string at each to specify in `()` by retrun is `list` |
+|---|---|---|
 
 **Code Practice :**
+| Date | File Code | Learning Log | About |
+|---|---|---|---|
+|---|---|---|---|
 
 ---
 
