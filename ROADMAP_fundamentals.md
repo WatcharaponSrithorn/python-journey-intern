@@ -70,6 +70,7 @@ A learning log for tracking my basic Python learning progress, including the top
 |2026.10.04 | [06_Customer_Tier_Classifier.py](./01_fundamentals/0102_control_flow/06_Customer_Tier_Classifier.py) | [Learning Log](./01_fundamentals/0102_control_flow/learning_log_06_Customer_Tier_Classifier.md) | Nested if input Casting|
 | 2026.10.07 |[07_Import_File_Router.py](./01_fundamentals/0102_control_flow/07_Import_File_Router.py)| [Learning Log](./01_fundamentals/0102_control_flow/learning_log_07_Import_File_Router.md) | Match Statement, Try .split(".") Use if/else|
 | 2026.10.08 |[08_API_Pagination_Simulator.py](./01_fundamentals/0102_control_flow/08_API_Pagination_Simulator.py)|[Learning Log](./01_fundamentals/0102_control_flow/learning_log_08_API_Pagination_Simulator.md)|while loop, Varible constant, if..else |
+| 2026.10.09 |[09_Sales_Row_Checker.py](./01_fundamentals/0102_control_flow/09_Sales_Row_Checker.py)|[Learning Log](./01_fundamentals/0102_control_flow/learning_log_09_Sales_Row_Checker.md)|for loop, if..else, Accumulator Pattern |
 ---
 
 ## 0103. data_structure
@@ -90,6 +91,7 @@ A learning log for tracking my basic Python learning progress, including the top
 **Code Practice :**
 | Date | File Code | Learning Log | About |
 |---|---|---|---|
+| 2026.10.12 |[10_Customer_Contact_Cleaner.py](./01_fundamentals/0103_data_structure/10_Customer_Contact_Cleaner.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_10_Customer_Contact_Cleaner.md)|string method basic, if..else, input |
 |---|---|---|---|
 
 ---

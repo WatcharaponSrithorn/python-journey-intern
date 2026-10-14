@@ -46,7 +46,11 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0102_control_flow/learning_log_07_Import_File_Router.md">learning_log_07_Import_File_Router.md</a>
 │   │   └── <a href="./01_fundamentals/0102_control_flow/08_API_Pagination_Simulator.py">08_API_Pagination_Simulator.py</a>
 │   │   └── <a href="./01_fundamentals/0102_control_flow/learning_log_08_API_Pagination_Simulator.md">learning_log_08_API_Pagination_Simulator.md</a>
+│   │   └── <a href="./01_fundamentals/0102_control_flow/09_Sales_Row_Checker.py">09_Sales_Row_Checker.py</a>
+│   │   └── <a href="./01_fundamentals/0102_control_flow/learning_log_09_Sales_Row_Checker.md">learning_log_09_Sales_Row_Checker.md</a>
 │   ├── 0103_data_structure/
+│   │   └── <a href="./01_fundamentals/0103_data_structure/10_Customer_Contact_Cleaner.py">10_Customer_Contact_Cleaner.py</a>
+│   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_10_Customer_Contact_Cleaner.md">learning_log_10_Customer_Contact_Cleaner.md</a>
 │   ├── 0104_functions/
 │   └── 0105_file_io/
 ├── 02_advanced/
