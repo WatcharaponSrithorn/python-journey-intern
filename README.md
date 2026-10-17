@@ -65,3 +65,5 @@ python-intern-journey/
 
 ## 📝 Notice
 This repository is a personal practice space for my internship preparation. Always open to feedback and suggestions! 🙏
+หากคุณมีข้อสงสัย มีข้อเสนอแนะ หรืออยากติชมโปรเจกต์นี้ สามารถเข้ามาสร้างโพสต์พูดคุยกับเราได้โดยตรงเลยค่ะ
+[GitHub Discussions](https://github.com/WatcharaponSrithorn/python-journey-intern/discussions)
