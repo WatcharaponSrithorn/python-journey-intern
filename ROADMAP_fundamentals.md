@@ -93,6 +93,7 @@ A learning log for tracking my basic Python learning progress, including the top
 | Date | File Code | Learning Log | About |
 |---|---|---|---|
 | 2026.10.12 |[10_Customer_Contact_Cleaner.py](./01_fundamentals/0103_data_structure/10_Customer_Contact_Cleaner.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_10_Customer_Contact_Cleaner.md)|string method basic, if..else, input |
+| 2026.10.15 |[10_Customer_Contact_Cleaner.py](./01_fundamentals/0103_data_structure/11_Order_ID_Batch_Cleaner.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_11_Order_ID_Batch_Cleaner.md)|list methods basic, string methods basic, if..else, for loop |
 |---|---|---|---|
 
 ---
