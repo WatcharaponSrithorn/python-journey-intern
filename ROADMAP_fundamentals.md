@@ -12,7 +12,7 @@ A learning log for tracking my basic Python learning progress, including the top
 
 **Learning Log :**
 >
-| Date | Topics Reviewed | Learning Notes | 
+| Date | Topics Reviewed | Learning Notes |
 |---|---|---|
 | 2026.09.25 | Introduction | <br> Python runs on an **interpreter**. <br> **Advantages:** It supports multiple operating systems, is open source, supports OOP, and has many libraries. <br> Python does not require `;` or `{}` to end a statement. <br> Python files use the `.py` file extension. <br> Python requires **indentation** because it is important for defining the **scope** of the code. <br> You can check the installed Python version in the local computer's CMD by using: `python --version`
 | 2026.09.26 | Comment | Use explain code , use temporarity cancelled to prevert from executing code <br> Commenting have 2 way <br> 1. Oneline comment use `#` <br> 2. Multiline comment use `"' '"` triple quotes |
@@ -31,7 +31,7 @@ A learning log for tracking my basic Python learning progress, including the top
 |---|---|---|
 
 **Code Practice :**
-| Date | File Code | Learning Log | About | 
+| Date | File Code | Learning Log | About |
 |---|---|---|---|
 | 2026.09.27 | [01_self_intro.py](./01_fundamentals/0101_basics/01_self_intro.py) | [Learning Log](./01_fundamentals/0101_basics/learning_log_01_self_intro.md) | Uses print() |
 | 2026.09.29 | [02_BMI_Calculator.py](./01_fundamentals/0101_basics/02_BMI_Calculator.py)|[Learning Log](./01_fundamentals/0101_basics/learning_log_02_BMI_Calculator.md)| using input(), Casting , Using f-string|
@@ -94,7 +94,8 @@ A learning log for tracking my basic Python learning progress, including the top
 | Date | File Code | Learning Log | About |
 |---|---|---|---|
 | 2026.10.12 |[10_Customer_Contact_Cleaner.py](./01_fundamentals/0103_data_structure/10_Customer_Contact_Cleaner.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_10_Customer_Contact_Cleaner.md)|string method basic, if..else, input |
-| 2026.10.15 |[10_Customer_Contact_Cleaner.py](./01_fundamentals/0103_data_structure/11_Order_ID_Batch_Cleaner.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_11_Order_ID_Batch_Cleaner.md)|list methods basic, string methods basic, if..else, for loop |
+| 2026.10.15 |[11_Order_ID_Batch_Cleaner.py](./01_fundamentals/0103_data_structure/11_Order_ID_Batch_Cleaner.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_11_Order_ID_Batch_Cleaner.md)|list methods basic, string methods basic, if..else, for loop |
+| 2026.10.17 |[12_Sales_Row_Tuple_Validator.py](./01_fundamentals/0103_data_structure/12_Sales_Row_Tuple_Validator.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_12_Sales_Row_Tuple_Validator.md)|Tuple, `for` loop, `if..else`, String method, list method |
 |---|---|---|---|
 
 ---

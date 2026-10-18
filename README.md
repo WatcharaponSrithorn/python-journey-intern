@@ -5,12 +5,12 @@ Practice Python from fundamentals to OOP — preparing for my internship journey
 ---
 
 ## 📌 About this Repository
-This Repository use store code, Learning Log, and Practice Python Language from fundamentals to OOP or real-world 
+This Repository use store code, Learning Log, and Practice Python Language from fundamentals to OOP or real-world
 
 ---
 
 ## 🛠️ Tech Stack
- 
+
 - Python 3.14.3
 - VS Code
 - GitHub
@@ -53,6 +53,8 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_10_Customer_Contact_Cleaner.md">learning_log_10_Customer_Contact_Cleaner.md</a>
 │   │   └── <a href="./01_fundamentals/0103_data_structure/11_Order_ID_Batch_Cleaner.py">11_Order_ID_Batch_Cleaner.py</a>
 │   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_11_Order_ID_Batch_Cleaner.md">learning_log_11_Order_ID_Batch_Cleaner.md</a>
+│   │   └── <a href="./01_fundamentals/0103_data_structure/12_Sales_Row_Tuple_Validator.py">12_Sales_Row_Tuple_Validator.py</a>
+│   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_12_Sales_Row_Tuple_Validator.md">learning_log_12_Sales_Row_Tuple_Validator.md</a>
 │   ├── 0104_functions/
 │   └── 0105_file_io/
 ├── 02_advanced/
