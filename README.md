@@ -55,6 +55,8 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_11_Order_ID_Batch_Cleaner.md">learning_log_11_Order_ID_Batch_Cleaner.md</a>
 │   │   └── <a href="./01_fundamentals/0103_data_structure/12_Sales_Row_Tuple_Validator.py">12_Sales_Row_Tuple_Validator.py</a>
 │   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_12_Sales_Row_Tuple_Validator.md">learning_log_12_Sales_Row_Tuple_Validator.md</a>
+│   │   └── <a href="./01_fundamentals/0103_data_structure/13_Customer_ID_Reconciliation.py">13_Customer_ID_Reconciliation.py</a>
+│   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_13_Customer_ID_Reconciliation.md">learning_log_13_Customer_ID_Reconciliation.md</a>
 │   ├── 0104_functions/
 │   └── 0105_file_io/
 ├── 02_advanced/
