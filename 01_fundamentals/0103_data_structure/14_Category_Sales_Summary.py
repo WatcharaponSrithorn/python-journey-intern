@@ -41,84 +41,73 @@ label_valid_rows = "Valid rows"
 label_rejected_rows = "Rejected rows"
 label_grand_total = "Grand total"
 label_top_category = "Top category"
-column_category = "Category "
+column_category = "Category"
 column_order = "Orders"
 column_revenue = "Revenue"
 column_avg = "Avg/order"
 title_reason = "Rejected reasons"
 
-# Secsion check the row size before unpack.
-for row, item in enumerate(rows,start=1):
+# Section check the row size before unpack.
+for row in rows:
     reason = ""
-    if len(item) != 4:
+    if len(row) != 4:
         reason = "Row must have 4 items"
-        reject_reasons[reason] = reject_reasons.get(reason,0) +1
     else:
         # clean category_id after unpack
-        order_id, category_id, qty, unit_price = item
+        order_id, category_id, qty, unit_price = row
         clean_category_id = category_id.upper().strip()
         # check validate Unknown category in category_names
-        key_category = category_names.keys()
-        if clean_category_id not in key_category:
+        if clean_category_id not in category_names:
             reason = "Unknown category"
-            reject_reasons[reason] = reject_reasons.get(reason,0) +1
         # check validate Quantity must be more than 0
         elif qty <= 0:
             reason = "Quantity must be more than 0"
-            reject_reasons[reason] = reject_reasons.get(reason,0) +1
         # check validate Price must be more than 0
         elif unit_price <= 0:
             reason = "Price must be more than 0"
-            reject_reasons[reason] = reject_reasons.get(reason,0) +1
-        # Row valid calaulate total store revenue_by_category and orders_by_category
-        else:
-            total = qty * unit_price
-            revenue_by_category[clean_category_id] = revenue_by_category.get(clean_category_id,0) + total
-            orders_by_category[clean_category_id] = orders_by_category.get(clean_category_id,0) + 1
-
+    # Row valid calculate total store revenue_by_category and orders_by_category
+    # store values valid row, grand total and if != "" store reject row
+    if reason == "":
+        total = qty * unit_price
+        grand_total += total
+        revenue_by_category[clean_category_id] = revenue_by_category.get(clean_category_id, 0) + total
+        orders_by_category[clean_category_id] = orders_by_category.get(clean_category_id, 0) + 1
+        valid_rows += 1
+    else:
+        reject_reasons[reason] = reject_reasons.get(reason, 0) + 1
+        reject_rows += 1
 # Section find Top category
-for item in revenue_by_category.items():
-    category_id, revenue = item
+for category_code, revenue in revenue_by_category.items():
     if revenue > top_revenue:
         top_revenue = revenue
-        top_category = category_id
+        top_category = category_code
     # Section calculate Avg/order
-    avg_order[category_id] = revenue / orders_by_category[category_id]
+    avg_order[category_code] = revenue / orders_by_category[category_code]
 
 # Section display report
 if len(rows) != 0:
     print(f"\n{separator*5} {title_report} {separator*5}")
     print(hyphen*50)
     print(f"{label_total_rows:<20} : {len(rows)}")
-    # Find value of valid rows
-    for item in orders_by_category.values():
-        valid_rows += item
     print(f"{label_valid_rows:<20} : {valid_rows}")
-    # Find value of Rejected rows
-    for item in reject_reasons.values():
-        reject_rows += item
     print(f"{label_rejected_rows:<20} : {reject_rows}")
-    # Find value of Grand total
-    for item in revenue_by_category.values():
-        grand_total += item
     print(f"{label_grand_total:<20} : {grand_total:.2f}")
     if valid_rows != 0:
         print(f"{label_top_category:<20} : {category_names.get(top_category)} ({top_revenue:.2f})")
         print(hyphen*50)
         print(f"{column_category:<20} | {column_order:<6} | {column_revenue:<10} | {column_avg}")
-        print(f"{category_names.get('STA'):<20} | {orders_by_category.get('STA'):<6} | {revenue_by_category.get('STA'):<10.2f} | {avg_order.get('STA'):.2f} ")
-        print(f"{category_names.get('ELC'):<20} | {orders_by_category.get('ELC'):<6} | {revenue_by_category.get('ELC'):<10.2f} | {avg_order.get('ELC'):.2f} ")
-        print(f"{category_names.get('FUR'):<20} | {orders_by_category.get('FUR'):<6} | {revenue_by_category.get('FUR'):<10.2f} | {avg_order.get('FUR'):.2f} ")
+        for key in revenue_by_category:
+            print(f"{category_names[key]:<20} | {orders_by_category[key]:<6} | {revenue_by_category[key]:<10.2f} | {avg_order[key]:.2f}")
     else:
         print(hyphen*50)
         print("No valid orders found")
     print(hyphen*50)
     print(title_reason)
     if len(reject_reasons) != 0:
-        for item in reject_reasons.items():
-            reason, amount = item
-            print(f"{reason:<30} : {amount}")
+        for reject_reason, reject_count in reject_reasons.items():
+            print(f"{reject_reason:<30} : {reject_count}")
     else:
-        print(reject_reasons)
+        print("No rejected rows")
+    print(hyphen*50)
 else:
     print("No rows to check")
