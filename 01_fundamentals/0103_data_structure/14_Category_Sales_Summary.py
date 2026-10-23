@@ -8,7 +8,19 @@
 # Variable sample data
 category_names = {"STA": "Stationery", "ELC": "Electronics", "FUR": "Furniture"}
 
-rows = [("ORD-1", "ELC", 1, 100.0), ("ORD-2", "STA", 1, 100.0), ("ORD-3", "ELC", 1, 300.0)]
+rows = [
+    ("ORD-2001", "STA", 10, 5.50),
+    ("ORD-2002", "ELC", 2, 350.00),
+    ("ORD-2003", "STA", 3, 45.00),
+    ("ORD-2004", "FUR", 1, 1200.00),
+    ("ORD-2005", "ELC", 0, 99.00),
+    ("ORD-2006", "XXX", 5, 10.00),
+    ("ORD-2007", "STA", 4),
+    ("ORD-2008", "ELC", 1, 350.00),
+    ("ORD-2009", "STA", 6, -1.00),
+    ("ORD-2010", "ELC", 3, 120.00),
+    ("ORD-2011", " sta ", 2, 10.00),
+]
 
 # Declaring variable
 revenue_by_category = {}
