@@ -99,6 +99,7 @@ A learning log for tracking my basic Python learning progress, including the top
 | 2026.10.15 |[11_Order_ID_Batch_Cleaner.py](./01_fundamentals/0103_data_structure/11_Order_ID_Batch_Cleaner.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_11_Order_ID_Batch_Cleaner.md)|list methods basic, string methods basic, if..else, for loop |
 | 2026.10.17 |[12_Sales_Row_Tuple_Validator.py](./01_fundamentals/0103_data_structure/12_Sales_Row_Tuple_Validator.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_12_Sales_Row_Tuple_Validator.md)|Tuple, `for` loop, `if..else`, String method, list method |
 | 2026.10.18 |[13_Customer_ID_Reconciliation.py](./01_fundamentals/0103_data_structure/13_Customer_ID_Reconciliation.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_13_Customer_ID_Reconciliation.md)|`set` , `set` operator <br> for , lits of tuple, lite and String method, if..else|
+| 2026.10.12 |[14_Category_Sales_Summary.py](./01_fundamentals/0103_data_structure/14_Category_Sales_Summary.py)|[Learning Log](./01_fundamentals/0103_data_structure/learning_log_14_Category_Sales_Summary.md)|`Dictionary` , Dictionary function, `for` loop, `if..else`|
 |---|---|---|---|
 
 ---
