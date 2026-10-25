@@ -34,7 +34,13 @@ empty_lines_count = 0
 count_fields = 0
 seen_oder_id = set(())
 reject_reasons = {}
-
+sum_revenue_category = {}
+order_category_count = {}
+sum_revenue_customer = {}
+count_order_customer = {}
+top_revenue_category = 0
+top_revenue_customer = 0
+avg_category = {}
 
 # Part A Prepare reference data
 # Clean crm_customers
@@ -79,3 +85,23 @@ for row in raw_orders:
             reject_reasons[reason] = reject_reasons.get(reason, 0) + 1
         else:
             seen_oder_id.add(clean_order_id)
+            # Part D Aggregate
+            # Calculate the total amount and count orders by category
+            total = clean_qty * clean_unit_price
+            sum_revenue_category[clean_category_id] = sum_revenue_category.get(clean_category_id,0) + total
+            order_category_count[clean_category_id] = order_category_count.get(clean_category_id,0) + 1
+
+            # Calculate the total amount and count orders by customer
+            sum_revenue_customer[clean_customer_id] = sum_revenue_customer.get(clean_customer_id,0) + total
+            count_order_customer[clean_customer_id] = count_order_customer.get(clean_customer_id,0) + 1
+            # Find Top category and Top customer
+            for top_category in sum_revenue_category.values():
+                if top_category > top_revenue_category:
+                    top_revenue_category = top_category
+                    top_category_id = clean_category_id
+            for top_customer in sum_revenue_customer.values():
+                if top_customer > top_revenue_customer:
+                    top_revenue_customer = top_customer
+                    top_customer_id = clean_customer_id
+            # Calculate Avg/order for each category
+            avg_category[clean_category_id] =  sum_revenue_category[clean_category_id]/ order_category_count[clean_category_id]
