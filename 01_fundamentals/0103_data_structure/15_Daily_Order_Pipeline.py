@@ -39,8 +39,6 @@ sum_revenue_customer = {}
 count_order_customer = {}
 top_revenue_category = 0
 top_revenue_customer = 0
-avg_category = {}
-order_coverage = 0
 checked_count = 0
 reject_count = 0
 valid_count = 0
@@ -49,6 +47,9 @@ total_in_customer = 0
 total_sum_revenue_category = 0
 total_sum_revenue_customer = 0
 total_in_reasons = 0
+grand_total = 0
+top_category_id = ""
+top_customer_id = ""
 
 # Declaring variable for display in report
 separator = "="
@@ -81,14 +82,13 @@ label_control_raw = "Raw = Empty + Checked"
 label_control_checked = "Checked = Valid + Rejected"
 label_control_category = "Category orders = Valid"
 label_control_customer = "Customer orders = Valid"
-label_control_customer = "Customer orders = Valid"
 label_control_reject =  "Reject reasons = Rejected"
 label_control_revenue = "Revenue category = customer"
 
 # Part A Prepare reference data
 # Clean crm_customers
 if len(raw_orders) != 0:
-    clean_crm_customers  = [customer_id for customer_id in crm_customers if customer_id.strip().upper() != "" ]
+    clean_crm_customers  = [customer_id.strip().upper() for customer_id in crm_customers if customer_id.strip() != "" ]
     set_crm_customer = set(clean_crm_customers)
     # casting tuple is set because Automatic Deduplication
     set_closed_customers = set(closed_customers)
@@ -111,7 +111,7 @@ if len(raw_orders) != 0:
                 clean_category_id = category_id.strip().upper()
                 clean_qty = int(qty.strip())
                 clean_unit_price = float(unit_price.strip())
-                # Part C Validate First failure wins store reason in Dics
+                # Part C Validate First failure wins store reason in dictionary
                 if not clean_order_id.startswith("ORD-"):
                     reason = "Order ID must start with ORD-"
                 elif clean_category_id not in category_names:
@@ -135,10 +135,9 @@ if len(raw_orders) != 0:
                 # Part D Aggregate
                 # Calculate the total amount and count orders by category
                 total = clean_qty * clean_unit_price
+                grand_total += total
                 sum_revenue_category[clean_category_id] = sum_revenue_category.get(clean_category_id,0) + total
                 order_category_count[clean_category_id] = order_category_count.get(clean_category_id,0) + 1
-
-
                 # Calculate the total amount and count orders by customer
                 sum_revenue_customer[clean_customer_id] = sum_revenue_customer.get(clean_customer_id,0) + total
                 count_order_customer[clean_customer_id] = count_order_customer.get(clean_customer_id,0) + 1
@@ -160,8 +159,10 @@ if len(raw_orders) != 0:
     active_but_no_orders = set_active_crm_customers - customers_with_orders
     list_active_but_no_orders = list(active_but_no_orders)
     list_active_but_no_orders.sort()
-    if len(set_active_crm_customers) != 0:
-        order_coverage = (len(customers_with_orders) / len(set_active_crm_customers))*100
+    if len(set_active_crm_customers) == 0:
+        order_coverage = "n/a"
+    else:
+        order_coverage = f"{(len(customers_with_orders) / len(set_active_crm_customers))*100:.1f}%"
     # Part F Control checks
     check_raw_total = "PASS" if checked_count + empty_lines_count == len(raw_orders) else "FAIL"
     check_raw_valid_reject = "PASS" if valid_count + reject_count == checked_count else "FAIL"
@@ -178,7 +179,7 @@ if len(raw_orders) != 0:
         total_sum_revenue_category += value
     for value in sum_revenue_customer.values():
         total_sum_revenue_customer += value
-    compare_revenue = "PASS" if round(total_sum_revenue_category,2) == round(total_sum_revenue_customer,2) else "FAIL"
+    compare_revenue = "PASS" if f"{total_sum_revenue_category:.2f}" == f"{total_sum_revenue_customer:.2f}" else "FAIL"
 
     # Part G Display reporting
     print(f"\n{separator*5} {title} {separator*5}")
@@ -188,19 +189,20 @@ if len(raw_orders) != 0:
     print(f"{label_rows_checked:<25} : {checked_count}")
     print(f"{label_valid_orders:<25} : {valid_count}")
     print(f"{label_rejected_orders:<25} : {reject_count}")
-    print(f"{label_grand_total:<25} : {total_sum_revenue_customer:.2f}")
+    print(f"{label_grand_total:<25} : {grand_total:.2f}")
     print(f"{hyphen*50}")
     if valid_count > 0:
         print(title_sales_by_category)
         print(f"{column_1_by_category:<15} | {column_2:<10} | {column_3:<10} | {column_4}")
         for key in sum_revenue_category.keys():
-            print(f"{category_names.get(key):<15} | {order_category_count.get(key):<10} | {sum_revenue_category.get(key):<10.2f} | {sum_revenue_category.get(key)/ order_category_count.get(key)}")
+            avg = sum_revenue_category.get(key)/ order_category_count.get(key)
+            print(f"{category_names.get(key):<15} | {order_category_count.get(key):<10} | {sum_revenue_category.get(key):<10.2f} | {avg:.2f}")
         print(f"{label_top_category:<25} : {category_names.get(top_category_id)} ({top_revenue_category:.2f})")
         print(f"{hyphen*50}")
         print(title_sales_by_customer)
         print(f"{column_1_by_customer:<15} | {column_2:<10} | {column_3:<10}")
         for key in sum_revenue_customer.keys():
-            print(f"{key:<15} | {count_order_customer.get(key):<10} | {sum_revenue_customer.get(key):.2f} ")
+            print(f"{key:<15} | {count_order_customer.get(key):<10} | {sum_revenue_customer.get(key):.2f}")
         print(f"{label_top_customer:<25} : {top_customer_id} ({top_revenue_customer:.2f})")
     else:
         print("No valid orders found")
@@ -210,10 +212,7 @@ if len(raw_orders) != 0:
     print(f"{label_closed_in_crm:<25} : {list_close_in_crm}")
     print(f"{label_customers_with_orders:<25} : {len(customers_with_orders)}")
     print(f"{label_active_but_no_orders:<25} : {list_active_but_no_orders}")
-    if order_coverage != 0:
-        print(f"{label_order_coverage:<25} : {order_coverage:.1f}%")
-    else:
-        print(f"{label_order_coverage:<25} : n/a")
+    print(f"{label_order_coverage:<25} : {order_coverage}")
     print(f"{hyphen*50}")
     print(f"{title_reject_reason}")
     if reject_count > 0:
