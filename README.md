@@ -59,6 +59,8 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_13_Customer_ID_Reconciliation.md">learning_log_13_Customer_ID_Reconciliation.md</a>
 │   │   └── <a href="./01_fundamentals/0103_data_structure/14_Category_Sales_Summary.py">14_Category_Sales_Summary.py</a>
 │   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_14_Category_Sales_Summary.md">learning_log_14_Category_Sales_Summary.md</a>
+│   │   └── <a href="./01_fundamentals/0103_data_structure/15_Daily_Order_Pipeline.py">15_Daily_Order_Pipeline.py</a>
+│   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_15_Daily_Order_Pipeline.md">learning_log_15_Daily_Order_Pipeline.md</a>
 │   ├── 0104_functions/
 │   └── 0105_file_io/
 ├── 02_advanced/
