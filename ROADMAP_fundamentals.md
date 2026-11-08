@@ -122,6 +122,10 @@ A learning log for tracking my basic Python learning progress, including the top
 >
 | Date | Topics Reviewed | Learning Notes |About |
 |---|---|---|---|
+| 2026.11.08 | Function | A function is group code that specific job , can use if many time without writing sane code again <br> **Naming rules** <br> Name of function should not be repeated, and use letter, number, underscore but it dose not start with number <br> Give it meaningful name, it is popular naming by `Camel Case` by Verb + Noun (Popular verbs as show, calculate, get, check, create, update, delete)  <br>  **Creating Functions** In python use `def` is Define as per name of function and Curly brackets `()` finish `:` inside function indent stayement block code <br> `def name_func():`<br>   `// statement code operate` <br> Calling use function `name_func()`|---|
+|  | Function Normal | A basic function dose not recive any input. It run code inside function when call it |---|
+|  | Function Parameter | A parameter is variable inside function. It receive value when call function by send argument go to function and can have many parameter but argumetn will equal to define parameter <br> Argument = Value sent to a function <br> Parameter = Variable that receives form argument and is used inside a function (Local variable). |---|
+| | Function Default value | A default value is value given to parameter. If do not send value (Argument) into function will use default value to define automatic. <br>`Note` : Write normal parameters first, then parameters with default values. |---|
 |---|---|---|---|
 
 **Code Practice :**
