@@ -62,6 +62,8 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0103_data_structure/15_Daily_Order_Pipeline.py">15_Daily_Order_Pipeline.py</a>
 │   │   └── <a href="./01_fundamentals/0103_data_structure/learning_log_15_Daily_Order_Pipeline.md">learning_log_15_Daily_Order_Pipeline.md</a>
 │   ├── 0104_functions/
+│   │   └── <a href="./01_fundamentals/0104_functions/16_Daily_Order_Check.py">16_Daily_Order_Check.py</a>
+│   │   └── <a href="./01_fundamentals/0104_functions/learning_log_16_Daily_Order_Check.md">learning_log_16_Daily_Order_Check.md</a>
 │   └── 0105_file_io/
 ├── 02_advanced/
 │   ├── 0201_oop/
