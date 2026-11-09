@@ -126,6 +126,9 @@ A learning log for tracking my basic Python learning progress, including the top
 |  | Function Normal | A basic function dose not recive any input. It run code inside function when call it |---|
 |  | Function Parameter | A parameter is variable inside function. It receive value when call function by send argument go to function and can have many parameter but argumetn will equal to define parameter <br> Argument = Value sent to a function <br> Parameter = Variable that receives form argument and is used inside a function (Local variable). |---|
 | | Function Default value | A default value is value given to parameter. If do not send value (Argument) into function will use default value to define automatic. <br>`Note` : Write normal parameters first, then parameters with default values. |---|
+| 2026.11.09 | Argument | A argument have 2 format <br> `(*args)` allows function to receive many argument <br> - It can receive many value <br> - Value is store in `tuple` access data by index <br> `(**kwargs)` allows function to receive many keyword argument <br> - Each argument has name is `key = value` <br> - Value is store in `dictionary` access data by `key` |---|
+| | Function Return | `return` is command in function by send value back out from function <br> - It send result from run process in function <br> - can use result to return in other part of Program <br> - Function stop when it reaches `return` |---|
+| | Function with Parameter and Return value | Function to combie parameter with return <br> - Function receive value, process it, and return result|---|
 |---|---|---|---|
 
 **Code Practice :**
