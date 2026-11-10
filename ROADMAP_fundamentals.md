@@ -135,6 +135,7 @@ A learning log for tracking my basic Python learning progress, including the top
 | Date | File Code | Learning Log | About |
 |---|---|---|---|
 | 2026.11.08 |[16_Daily_Order_Check.py](./01_fundamentals/0104_functions/16_Daily_Order_Check.py)|[Learning Log](./01_fundamentals/0104_functions/learning_log_16_Daily_Order_Check.md)| `def`, `parameter`, `default parameter`, `string method` basic, `if..else`, `for` loop, `list of tuple`|
+| 2026.11.09 |[17_Daily_Order_Report.py](./01_fundamentals/0104_functions/17_Daily_Order_Report.py)|[Learning Log](./01_fundamentals/0104_functions/learning_log_17_Daily_Order_Report.md)| `return`, `*args`, `def`, `parameter`, `default parameter`, `string method` basic, `if..else`, `for` loop, `list of tuple`|
 |---|---|---|---|
 ---
 
