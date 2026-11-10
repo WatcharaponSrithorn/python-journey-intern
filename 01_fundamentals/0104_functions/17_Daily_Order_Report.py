@@ -1,16 +1,15 @@
 # ============================================
 # File    : 17_Daily_Order_Report.py
-# Purpose : Orders come as raw CSV lines. Some lines are empty,
-#           some have missing fields, some names are empty,
-#           and some numbers are wrong. We need a report we can trust.
-# Concepts: Function with return, def, parameter, default parameter, for loop
+# Purpose : TPrint a daily order report. Clean names, check quantity,
+#           and calculate totals with return functions.
+# Concepts: Function with return, *args,  def, parameter, default parameter, for loop
 # Issue   : #38
 # Author  : Watacharapon
 # Date    : 2026-11-09
 # ============================================
 
 MIN_QUANTITY = 1
-# Main data (order_id, name, quantity, price)
+# Main data (order_id, raw_name, quantity, unit_price)
 orders = [
     ("ORD-001", "  somchai  ", 2, 50.00),
     ("ORD-002", "MALI", 1, 120.50),
@@ -27,16 +26,16 @@ def printTitle(title, symbol="="):
     print(symbol*30)
 
 
-# Function for claen name
-def cleanName(name, default="UNKNOWN"):
-    clean_name = name.strip().upper()
+# Function for clean raw_name
+def cleanName(raw_name, default="UNKNOWN"):
+    clean_name = raw_name.strip().upper()
     if clean_name == "":
         return default
     else:
         return clean_name
 
 
-# Function for check quantity munt not less then MIN_QUANTITY
+# Function for check quantity must not be less than MIN_QUANTITY
 def isValidQuantity(quantity, min_quantity=MIN_QUANTITY):
     if quantity >= min_quantity:
         return True
@@ -44,52 +43,46 @@ def isValidQuantity(quantity, min_quantity=MIN_QUANTITY):
         return False
 
 
-# Function for calulate amout of each order_id
-def calculateTotal(quantity, price):
-    total = quantity * price
+# Function for calculate amount of each order_id
+def calculateTotal(quantity, unit_price):
+    total = quantity * unit_price
     return total
 
 
 # Function for sum of function calculateTotal
-def addAll(total):
+def addAll(*totals):
     sum_total = 0
-    for i in total:
+    for i in totals:
         sum_total += i
     return sum_total
 
 
 # Part B Use function in loop
-if orders != []:
+if len(orders) > 0:
     count_reject = 0
     count_valid = 0
     list_total = []
     printTitle("DAILY ORDER REPORT")
-    for order_id, name, quantity, price in orders:
-        reason = ""
+    for order_id, raw_name, quantity, unit_price in orders:
         if isValidQuantity(quantity):
-            total = calculateTotal(quantity, price)
-            print(f"[{order_id}] {cleanName(name):<15} | {total:.2f} ")
+            total = calculateTotal(quantity, unit_price)
+            print(f"[{order_id}] {cleanName(raw_name)} | total {total:.2f}")
             list_total.append(total)
             count_valid += 1
         else:
-            print(f"[{order_id}] {cleanName(name):<15} | Quantity must be at least {MIN_QUANTITY} ")
+            print(f"[{order_id}] REJECTED | Quantity must be at least {MIN_QUANTITY}")
             count_reject += 1
     print("-"*30)
 
     # Part C Summary
-    label_valid_order = "Valid orders"
-    label_rejected_order = "Rejected orders"
-    label_grand_total = "Grand total"
-    label_check_control = "Control check"
-    grand_total = addAll(list_total)
-    print(f"{label_valid_order:<25} : {count_valid}")
-    print(f"{label_rejected_order:<25} : {count_reject}")
-    print(f"{label_grand_total:<25} : {grand_total:.2f}")
+    print(f"Valid orders    : {count_valid}")
+    print(f"Rejected orders : {count_reject}")
+    print(f"Grand total     : {addAll(*list_total):.2f}")
     if count_valid + count_reject == len(orders):
-        result1 = "PASS"
+        control_result = "PASS"
     else:
-        result1 = "FAIL"
-    print(f"{label_check_control:<25} : {result1}")
+        control_result = "FAIL"
+    print(f"Control check   : {control_result}")
     print("-"*30)
 else:
     print("No orders to check")
