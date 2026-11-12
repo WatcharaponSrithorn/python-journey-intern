@@ -66,6 +66,8 @@ python-intern-journey/
 │   │   └── <a href="./01_fundamentals/0104_functions/learning_log_16_Daily_Order_Check.md">learning_log_16_Daily_Order_Check.md</a>
 │   │   └── <a href="./01_fundamentals/0104_functions/17_Daily_Order_Report.py">17_Daily_Order_Report.py</a>
 │   │   └── <a href="./01_fundamentals/0104_functions/learning_log_17_Daily_Order_Report.md">learning_log_17_Daily_Order_Report.md</a>
+│   │   └── <a href="./01_fundamentals/0104_functions/18_Order_Report_v2.py">18_Order_Report_v2.py</a>
+│   │   └── <a href="./01_fundamentals/0104_functions/learning_log_18_Order_Report_v2.md">learning_log_18_Order_Report_v2.md</a>
 │   └── 0105_file_io/
 ├── 02_advanced/
 │   ├── 0201_oop/
