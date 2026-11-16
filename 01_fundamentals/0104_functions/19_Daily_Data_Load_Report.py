@@ -95,6 +95,8 @@ def getRunStats(*row_counts):
 count_passed = 0
 count_failed = 0
 count_skipped = 0
+list_rows_read = []
+list_rows_reject = []
 
 if len(sources) == 0:
     print("No sources to check")
@@ -106,9 +108,32 @@ else:
             if isGoodQuality(dict_record.get('success_rate'), min_rate=MIN_SUCCESS_RATE):
                 print(f"[PASS] {dict_record.get('source')} | {dict_record.get('team')} | read {dict_record.get('rows_read')} | rejected {dict_record.get('row_reject')} | success {dict_record.get('success_rate'):.2f}%")
                 count_passed += 1
+                list_rows_reject.append(dict_record.get('row_reject'))
+                list_rows_read.append(dict_record.get('rows_read'))
             else:
                 print(f"[FAIL] {dict_record.get('source')} | {dict_record.get('team')} | read {dict_record.get('rows_read')} | rejected {dict_record.get('row_reject')} | success {dict_record.get('success_rate'):.2f}%")
                 count_failed += 1
+                list_rows_reject.append(dict_record.get('row_reject'))
+                list_rows_read.append(dict_record.get('rows_read'))
         else:
+            dict_record = buildRunRecord(raw_name, rows_read, rows_rejected, team=team)
             print(f"[SKIP] {dict_record.get('source')} | no rows to load")
             count_skipped += 1
+    count, total, average = getRunStats(*list_rows_read)
+    sum_rows_reject = sumRows(*list_rows_reject)
+    overall_success = calculateSuccessRate(total, sum_rows_reject)
+    text_overall_success = f"{overall_success:.2f}%"
+    if (len(sources) == count+count_skipped) and (count_passed+count_failed) == count:
+        result_control_check = "PASS"
+    else:
+        result_control_check = "FAIL"
+    printInfo("SUMMARY", sources_loaded=count, sources_skipped=count_skipped, quality_passed=count_passed, quality_failed=count_failed, total_rows_read=total, total_rejected=sum_rows_reject, overall_success=text_overall_success, control_check = result_control_check)
+# Part H : 7: Edge case and Test end file
+test_1 = buildRunRecord("  demo ", 100, 10)
+print(f"[TEST] keys without extra : {len(test_1)}")
+test_2 = buildRunRecord("demo", 100, 10, team="ops", env="PROD")
+print(f"[TEST] {test_2}")
+test_3 = getRunStats()
+print(f"[TEST] stats with no sources : {test_3}")
+test_4 = isGoodQuality(90.0, min_rate=85.0)
+print(f"[TEST] quality 90.0 with min 85.0 : {test_4} ")
